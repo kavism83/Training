@@ -15,7 +15,7 @@
          enabled="true"
          homeMashup=""
          identifier=""
-         lastModifiedDate="2020-06-30T11:58:24.806Z"
+         lastModifiedDate="2020-06-30T12:17:42.084Z"
          name="TestThing"
          projectName="Simulator"
          published="false"
@@ -66,11 +66,10 @@
                                         <code>
                                         <![CDATA[
                                         //2. Create a variable that will store all the results 
-                                        var prevTestResult= Resources["InfoTableFunctions"].CreateInfoTableFromDataShape({
+                                        var params= Resources["InfoTableFunctions"].CreateInfoTableFromDataShape({
                                             infoTableName : "InfoTable",
                                             dataShapeName : "TestResultData"
                                         });
-                                        
                                         
                                         var result = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
                                         // TestResultData entry object
