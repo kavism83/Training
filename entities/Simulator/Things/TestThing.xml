@@ -15,7 +15,7 @@
          enabled="true"
          homeMashup=""
          identifier=""
-         lastModifiedDate="2020-06-30T12:17:42.084Z"
+         lastModifiedDate="2020-06-30T12:59:44.760Z"
          name="TestThing"
          projectName="Simulator"
          published="false"
@@ -65,13 +65,15 @@
                                     <Row>
                                         <code>
                                         <![CDATA[
-                                        //2. Create a variable that will store all the results 
-                                        var params= Resources["InfoTableFunctions"].CreateInfoTableFromDataShape({
-                                            infoTableName : "InfoTable",
-                                            dataShapeName : "TestResultData"
-                                        });
+                                        var params = {
+                                        	infoTableName: "InfoTable" /* STRING */,
+                                        	dataShapeName: "TestResultData" /* DATASHAPENAME */
+                                        };
                                         
+                                        // result: INFOTABLE
                                         var result = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape(params);
+                                        
+                                        
                                         // TestResultData entry object
                                         var FirstEntry = new Object();
                                         FirstEntry.comments = "test result that passed the verification"; // STRING
